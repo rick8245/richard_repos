@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<udm.DeploymentPackage version="1.1" application="petclinic">
+  <application />
+  <orchestrator />
+  <deployables>
+    <file.Folder name="/petclinic" file="/PetClinic-1.1.war">
+      <tags>
+	  <value>ontwikkel</value>
+	  <value>test</value>
+	  </tags>
+      <scanPlaceholders>true</scanPlaceholders>
+      <preScannedPlaceholders>true</preScannedPlaceholders>
+      <placeholders />
+      <checksum>a062670f684d123ae0cadfd14823a3df40dec5be</checksum>
+      <targetPath>{{location}}</targetPath>
+      <targetPathShared>true</targetPathShared>
+      <createTargetPath>true</createTargetPath>
+    </file.Folder>
+  </deployables>
+  <applicationDependencies />
+  <dependencyResolution>LATEST</dependencyResolution>
+  <undeployDependencies>false</undeployDependencies>
+</udm.DeploymentPackage>
