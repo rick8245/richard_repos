@@ -1,0 +1,12 @@
+- task: XLDADOS@1
+  displayName: Deployment by XLADOS-deploy
+  inputs:
+    goal: deploy
+    serviceConnection: '${{ parameters.serviceConnection }}'
+    ${{ if parameters.application }}: 
+       name: 'ALIS'
+       darPackage: '*/ALI.Web-${{ parameters.version }}.dar'
+    ${{ else }}:
+      darPackage: '*/${{ parameters.application }}.Web-${{ parameters.version }}.dar'
+    targetEnvironment: '${{ parameters.targetEnvironment }}'
+    rollback: true
