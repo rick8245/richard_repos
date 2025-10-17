@@ -1,4 +1,3 @@
-- task: XLDADOS@1
   displayName: Deployment by XLADOS-deploy
   inputs:
     goal: deploy
